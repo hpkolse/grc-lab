@@ -1,0 +1,287 @@
+@font-face {
+    font-family: Druk Wide;
+    src: url(./fonts/Druk-Wide-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./fonts/Montserrat.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 1742px;
+    height: 1124px;
+    
+}
+
+.main-container {
+    background-color: black;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.body {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.image-container {
+    padding-top: 3.4375rem;
+    padding-left: 4rem;
+}
+
+.menu {
+    background-color: black;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    position: relative;
+    height: 164px;
+}
+
+.gold {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+.refl {
+    padding-left: 1rem;
+    position: absolute;
+    height: 960px;
+    z-index: 3;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    list-style-type: none;
+}
+
+li {
+    padding-right: 4.5rem;
+    padding-top: 4rem;
+}
+
+a {
+    font-family: 'Druk Wide';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 183%;
+}
+
+.image-container>img {
+    padding-right: 6.5rem;
+}
+
+.bike-container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.bike {
+    width: 1032px;
+    height: 700px;
+}
+
+
+
+.page {
+    display: flex;
+    margin-top: 124px;
+    padding-left: 4rem;
+    width: 1200px;
+    height: 92px;
+}
+
+.bar-img{
+    width: 226px;
+    height: 2px;
+}
+
+.description{
+    padding-left: 77px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 200%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.digit{
+    /* width: 72px; */
+    height: 40px;
+    font-family: 'Druk Wide';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    
+}
+
+.slider-bar{
+    margin: 0 40px;
+}
+
+.specs {
+    height: 664px;
+    width: 305px;
+    color: red;
+    position: absolute;
+    right: 0;
+    padding-top: 260px;
+    z-index: 1;
+}
+
+.footer {
+    width: 933px;
+    height: 92px;
+    background-color: black;
+    color: white;
+}
+
+.specs>div {
+    padding-top: 2rem;
+}
+
+.div-slider{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.specs>.speed>p {
+    padding-bottom: 1rem;
+}
+
+.specs>.power>p {
+    padding-bottom: 1rem;
+}
+
+.specs>.torque>p {
+    padding-bottom: 1rem;
+}
+
+.specs>.fuel>p {
+    padding-bottom: 1rem;
+}
+
+.side-title {
+    transform: rotate(-90deg);
+    position: absolute;
+    width: 9.25rem;
+    height: 1.25rem;
+    left: -6.25rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 3rem;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    color: #3F3E44;
+}
+
+.montblanc{
+    position: absolute;
+    left:51.875rem;
+    top: 3.125rem;
+}
+
+.montblanc-img{
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.title{
+        font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.938rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+}
+
+.info{
+    font-family: 'Druk Wide';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.625rem;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.sub-title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 0.938rem;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.speed {
+    display: flex;
+    flex-direction: column;
+}
+
+.power {
+    display: flex;
+    flex-direction: column;
+}
+
+.torque {
+    display: flex;
+    flex-direction: column;
+}
+
+.fuel {
+    display: flex;
+    flex-direction: column;
+}
+.pager{
+    background: black;
+    height: 16.5rem;
+}
+.label{
+    top:36rem;
+    position: absolute;
+    z-index: 4;
+    width: 84.375rem;
+    overflow: hidden;
+}
